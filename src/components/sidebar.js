@@ -1,19 +1,15 @@
-import React ,{ useState, useEffect}from 'react';
+import React from 'react';
 
 function Sidebar (props) {
-  useEffect(() => {
-
-  }, []);
-
   return (
     <div>
         <div>
           <nav href="#navbar" className="js-colorlib-nav-toggle colorlib-nav-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><i /></nav>
           <aside id="colorlib-aside" className="border js-fullheight">
             <div className="text-center">
-              <div className="author-img" style={{backgroundImage: 'url(images/Shin.jpg)'}} />
-              <h1 id="colorlib-logo"><a href="index.html">Shin Tsz TU</a></h1>
-              <span className="email"><i className="icon-mail"></i> artsztu27@gmail.com</span>
+              <div className="author-img" style={{backgroundImage: 'url(images/shin.jpg)'}} />
+              <h1 id="colorlib-logo"><a href="index.html">Shin Tsz Tu</a></h1>
+              <span className="email"><i className="icon-mail"></i>artsztu27@gmail.com</span>
             </div>
             <nav id="colorlib-main-menu" role="navigation" className="navbar">
               <div id="navbar" className="collapse">
