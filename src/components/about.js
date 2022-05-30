@@ -1,24 +1,26 @@
-import React from 'react';
+import React, {useContext}  from 'react';
+import { useIntl, FormattedMessage } from 'react-intl';
 
 function About () {
+    const { formatMessage: i18n } = useIntl();
   return (
     <div>
       <section className="colorlib-about" data-section="about">
         <div className="colorlib-narrow-content">
             <div className="row">
-            <div className="col-md-12">
-                <div className="row row-bottom-padded-sm animate-box" data-animate-effect="fadeInLeft">
                 <div className="col-md-12">
-                    <div className="about-desc">
-                    <span className="heading-meta">About Me</span>
-                    <h2 className="colorlib-heading">Who Am I?</h2>
-                    <p>I am a web developer specializing in front-end development. </p>
-                    <p>I am a very active person with a passion for learning new things and always curious about much knowledge.</p>
-                    <p>I has a proactive attitude and flexibility in learning.</p>
+                    <div className="row row-bottom-padded-sm animate-box" data-animate-effect="fadeInLeft">
+                        <div className="col-md-12">
+                            <div className="about-desc">
+                                <span className="heading-meta">{i18n({id:'AboutMe'})}</span>
+                                <h2 className="colorlib-heading">{i18n({id:'who'})}</h2>
+                                <p>{i18n({id:'web'})} </p>
+                                <p>{i18n({id:'active'})}</p>
+                                <p>{i18n({id:'proactive'})}</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                </div>
-            </div>
             </div>
         </div>
         </section>
